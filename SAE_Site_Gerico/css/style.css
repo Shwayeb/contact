@@ -1,0 +1,297 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: #35424a;
+    color: #ffffff;
+    padding: 10px 0;
+}
+
+header h1 {
+    float: left;
+    margin: 0;
+    padding: 0 20px;
+}
+
+nav {
+    float: right;
+    padding: 10px 20px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.hero {
+    background: url('../assets/images/background.jpg') no-repeat center center/cover;
+    height: 300px;
+    color: #ffffff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info {
+    padding: 20px;
+    background: #ffffff;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #35424a;
+    color: #ffffff;
+}
+
+.news, .testimonials, .team {
+    padding: 20px;
+    background: #ffffff;
+    margin: 20px 0;
+}
+
+.news-item, .testimonial-item, .team-member {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+}
+
+.team-image {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.carousel {
+    position: relative;
+    overflow: hidden;
+}
+
+.carousel-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide {
+    min-width: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255, 255, 255, 0.8);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; 
+}
+
+.info-image {
+    width: 150px; 
+    height: auto; 
+    margin-right: 20px; 
+}
+
+.info-text {
+    flex: 1; 
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.info-item.left {
+    flex-direction: row;
+}
+
+.info-item.right {
+    flex-direction: row-reverse;
+}
+
+.info-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+    transition: transform 0.3s, filter 0.3s;
+}
+
+.info-item.left .info-image {
+    margin-right: 20px;
+}
+
+.info-item.right .info-image {
+    margin-left: 20px;
+}
+
+.info-image:hover {
+    transform: scale(1.1);
+    filter: brightness(1.1);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #ffffff;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.team-container {
+    display: flex; /* Utilise flexbox pour l'alignement */
+    justify-content: space-around; /* Espacement uniforme entre les membres */
+    flex-wrap: wrap; /* Permet de passer à la ligne si nécessaire sur des écrans plus petits */
+}
+
+.team-member {
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 150px; /* Permet aux membres de s'ajuster selon l'espace disponible */
+    min-width: 150px; /* Largeur minimale pour éviter que les membres ne deviennent trop petits */
+}
+
+.team-image {
+    width: 100px; /* Taille des images des membres */
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Media Queries pour rendre la mise en page responsive */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column; /* Change en colonne sur écrans plus petits */
+        align-items: center; /* Centre les membres */
+    }
+}
+
+.image-eco{
+    width:500px;
+    border-radius: 50px;
+    height:auto;
+    margin: auto;
+    margin-left: 100px;
+}
+
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 1rem 0;
+}
+
+.navbar-brand {
+    font-weight: 700;
+    color: var(--primary-color) !important;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+.contact-header {
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    color: white;
+    padding: 4rem 0;
+    margin-bottom: 3rem;
+}
+
+.contact-form {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.contact-info-box {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.contact-icon {
+    color: var(--secondary-color);
+    font-size: 1
+}
+

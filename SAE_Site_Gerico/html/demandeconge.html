@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Demande de Congé - Gérico</title>
+    <script src="../javascript/validateDates.js" defer></script> 
+</head>
+<body>
+    <header>
+        <h1>Gérico</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="login.html">Connexion</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="dashboard.html">Tableau de bord</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Faire une Demande de Congé</h2>
+            <form onsubmit="return validateDates();" method="post"> 
+                <div class="form-group">
+                    <label for="start-date">Date de début :</label>
+                    <input type="date" id="start-date" name="start-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="end-date">Date de fin :</label>
+                    <input type="date" id="end-date" name="end-date" required>
+                </div>
+                <button type="submit">Soumettre la demande</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

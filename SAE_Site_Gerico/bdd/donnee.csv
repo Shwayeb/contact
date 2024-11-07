@@ -1,0 +1,17 @@
+type,nom,prenom,date_naissance,adresse,date_embauche,num_securite_sociale,salaire_base,fonction,email,num_telephone,identifiant,mot_de_passe,id_departement,admin,est_archive,dernier_depot_fiche,dernier_depot_conge,periode,salaire_brut,retenues,salaire_net,chemin_fichier,id_employe,date_depot,date_debut,date_fin,demi_journee,type_conge,id_conge,id_demande,date_demande,etat
+employe,Dupont,Jean,1980-05-12,10 rue de Paris,2020-01-15,1234567890123,2500.00,Développeur,jean.dupont@example.com,0612345678,jdupont,password123,1,FALSE,FALSE,2024-01-01,2024-01-15,,,,,,,,,,,,
+employe,Martin,Sophie,1990-03-20,20 rue des Fleurs,2021-06-10,2345678901234,3000.00,Chef de projet,sophie.martin@example.com,0623456789,smartin,password456,2,TRUE,FALSE,2024-02-01,2024-02-15,,,,,,,,,,,,
+employe,Bernard,Pierre,1985-11-30,30 avenue des Champs,2019-09-01,3456789012345,2800.00,Analyste,pierre.bernard@example.com,0634567890,pbernard,password789,1,FALSE,FALSE,2024-03-01,2024-03-15,,,,,,,,,,,,
+employe,Durand,Claire,1995-07-25,40 boulevard de la République,2022-03-05,4567890123456,2200.00,Assistant,claire.durand@example.com,0645678901,cdurand,password321,2,FALSE,FALSE,2024-04-01,2024-04-15,,,,,,,,,,,,
+employe,Leroy,Luc,1988-10-15,50 rue de la Liberté,2020-08-30,5678901234567,3500.00,Directeur,luc.leroy@example.com,0656789012,lloy,password654,1,TRUE,FALSE,2024-05-01,2024-05-15,,,,,,,,,,,,
+departement,Informatique,,,,"","",,"","",,"","",,"","",,"","",,"",,"",,"",,"",,"",,
+departement,Ressources Humaines,,,,"","",,"","",,"","",,"","",,"","",,"",,"",,"",,"",,"",,
+departement,Finance,,,,"","",,"","",,"","",,"","",,"","",,"",,"",,"",,"",,"",,
+departement,Marketing,,,,"","",,"","",,"","",,"","",,"","",,"",,"",,"",,"",,"",,"",,
+departement,Ventes,,,,"","",,"","",,"","",,"","",,"","",,"","",,"",,"",,"",,"",,"",
+fiche_de_paie,,,"","2024-01",3000.00,500.00,2500.00,/chemin/fiches/janvier.pdf,1,2024-01-31,,,,,,,,,,,,
+fiche_de_paie,,,"","2024-02",3200.00,520.00,2680.00,/chemin/fiches/fevrier.pdf,2,2024-02-28,,,,,,,,,,,,
+fiche_de_paie,,,"","2024-03",2800.00,460.00,2340.00,/chemin/fiches/mars.pdf,3,2024-03-31,,,,,,,,,,,,
+fiche_de_paie,,,"","2024-04",2900.00,490.00,2410.00,/chemin/fiches/avril.pdf,4,2024-04-30,,,,,,,,,,,,
+conges,,,"","",,"","",,"","",,"","",,"","",,"","2024-05-01","2024-05-10",FALSE,"Vacances",1,1,"2024-05-01","En attente"
+demande_de_conges,,,"","",,"","",,"","",,"","",,"",,"","",,"",,"",,"",,"",,"","2024-04-15","En attente"
